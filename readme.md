@@ -93,4 +93,42 @@ yaml
 Copy code
 
 ---
+🔁 PM2 Process Manager Setup
+
+PM2 is used to keep the backend server running continuously and automatically restart it in case of crashes.
+
+📌 Install PM2 (Global)
+npm install -g pm2
+
+▶️ Start Server Using PM2
+pm2 start server.js --name todo-api
+
+📊 Check Server Status
+pm2 status
+
+📜 View Logs
+pm2 logs todo-api
+
+🔄 Restart / Stop Server
+pm2 restart todo-api
+pm2 stop todo-api
+
+💾 Save PM2 Process
+pm2 save
+
+⚙️ Auto-start PM2 on System Boot
+pm2 startup
+
+
+(Execute the command shown by PM2 after running this)
+
+✅ PM2 Benefits
+
+Server runs in background
+
+Auto-restarts on crash
+
+Works even after closing VS Code
+
+Improves production stability
 
