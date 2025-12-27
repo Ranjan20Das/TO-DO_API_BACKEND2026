@@ -1,0 +1,96 @@
+# TO-DO API Backend 2026
+
+A RESTful backend API for task management built using Node.js, Express, MongoDB, and JWT authentication.
+
+---
+
+## 📌 Technologies Used
+
+- Node.js
+- Express.js
+- MongoDB & Mongoose
+- JSON Web Token (JWT)
+- Postman (for API testing)
+
+---
+
+## 📂 Project Setup
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/Ranjan20Das/TO-DO_API_BACKEND2026.git
+cd TO-DO_API_BACKEND2026
+2️⃣ Install dependencies
+bash
+Copy code
+npm install
+3️⃣ Create environment file
+Create a .env file in the root directory and add:
+
+env
+Copy code
+PORT=5000
+MONGO_URI=mongodb://127.0.0.1:27017/smarttodo
+JWT_SECRET=your_jwt_secret_key
+4️⃣ Start MongoDB
+Make sure MongoDB is running locally:
+
+bash
+Copy code
+mongod
+5️⃣ Start the server
+bash
+Copy code
+nodemon server.js
+OR
+
+bash
+Copy code
+node server.js
+You should see:
+
+arduino
+Copy code
+MongoDB Connected
+Server running on port 5000
+🔐 API Endpoints
+Authentication
+POST /api/auth/register
+
+POST /api/auth/login
+
+Tasks (Protected Routes)
+POST /tasks → Create task
+
+GET /tasks → Get all tasks
+
+PUT /tasks/:id → Update task
+
+DELETE /tasks/:id → Delete task
+
+🧪 Testing with Postman
+Use Bearer Token for protected routes
+
+Add JWT token in Authorization tab
+
+📊 Database
+MongoDB database name: smarttodo
+
+Collections:
+
+users
+
+tasks
+
+✅ Author
+Ranjan Das
+Node.js developer
+
+⭐ License
+This project is for learning and educational purposes.
+
+yaml
+Copy code
+
+---
+
