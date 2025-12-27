@@ -89,8 +89,23 @@ Node.js developer
 ⭐ License
 This project is for learning and educational purposes.
 
-yaml
-Copy code
+## Live API
+
+The backend API is deployed on Render and can be accessed here: [To-Do API Backend](https://to-do-api-backend2026.onrender.com/)
+Test the API using Postman
+
+Open Postman.
+
+Create a new request.
+
+Set request type to GET.
+
+Paste your deployed URL:
+
+https://to-do-api-backend2026.onrender.com/tasks
+Click Send.
+result:-
+Smart ToDo API running
 
 ---
 🔁 PM2 Process Manager Setup
